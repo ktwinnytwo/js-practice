@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basics</title>
+</head>
+
+<body>
+    <h1>Form Events</h1>
+    <button onclick="myFunction()">Try it</button>
+
+
+    <form action="/dogs" id="tweetForm">
+        <!--action: this is where the data from the form is sent to,
+        but to prevent that default action of the submit button we use
+        preventDefault() in the JS code-->
+        <input type="text" name="username" placeholder="username">
+        <input type="text" name="tweet" placeholder="tweet">
+        <button>Post Tweet</button>
+    </form>
+
+    <h2>Twitter Feed:</h2>
+    <ul id="tweets">
+
+    </ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
