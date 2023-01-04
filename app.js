@@ -111,6 +111,7 @@ printRainbow();
 
 
  //---------------------------------------------------------------------
+ //Await and Async : Dont have to use .then with its functions and .catch
 
 const fakeRequest = (url) => {
     return new Promise((resolve, reject) => {
@@ -125,6 +126,7 @@ const fakeRequest = (url) => {
     })
 }
 
+//Using try and catch: Try when a promise is resolved, Catch when there is an error
 
 async function makeTwoRequests() {
     try {
