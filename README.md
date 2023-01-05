@@ -2,7 +2,7 @@
 different exercises
 This repo contains different practice exercises in each branch as well as notes
 
-*NOTE*
+NOTES
 
 -- HTTP VERBS --
 
