@@ -65,24 +65,23 @@ const getDadJoke = async() => {
   const config = { headers: {Accept: 'application/json'}} //this wording is something found in the docs of the API
   const res = await axios.get('https://icanhazdadjoke.com/', config);
   //we could include the header directly after the url, but it looks kinda messy
-  console.log(res); //this returns JSON in the data key
-
+  
   //Extract the joke out of the data, and return it so we can save it in a variable
   //when we call it in the next function
   return res.data.joke;
 }
 
 //function for adding a new joke
-const addNewJoke = () => {
+const addNewJoke = async () => {
   //Call the API request function
-  const jokeText = getDadJoke()
+  const jokeText = await getDadJoke()
   //Create an li
   const newLi = document.createElement('LI');
-  //appending the text from the API call to the li
-  newLi.append(res.data.joke)
+  // //appending the text from the API call to the li
+  newLi.append(jokeText);
   //append that li to the ul
   jokeList.append(newLi);
 }
 
 //add event listener to the button
-button.addEventListener('click', )
+button.addEventListener('click', addNewJoke)
