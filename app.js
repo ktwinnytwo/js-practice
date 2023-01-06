@@ -60,8 +60,6 @@ const jokeList = document.querySelector('#jokes');
 const button = document.querySelector('button');
 const getDadJoke = async() => {
   try {
-  //const res = await axios.get('https://icanhazdadjoke.com/');
-  //console.log(res); <-- this returns html if you look in the data key
   //if we want JSON for this particular API we have to include a header:
   const config = { headers: {Accept: 'application/json'}} //this wording is something found in the docs of the API
   const res = await axios.get('https://icanhazdadjoke.com/', config);
