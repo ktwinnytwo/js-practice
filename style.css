@@ -1,0 +1,12 @@
+li, span {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+#showContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
