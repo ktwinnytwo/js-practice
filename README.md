@@ -30,3 +30,5 @@ Ex: Arrays do not have a method attached to them called .length or .push()
 if you look at their properties. Instead all of these methods are attached
 to the prototype, and they all call the same prototype instead of having to
 attach all those methods individually to each array.
+
+One Prototype object can be attached to multiple things 
