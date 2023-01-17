@@ -4,7 +4,7 @@ This file contains different practice exercises in each branch
 
 
 
-HTTP Headers
+---HTTP Headers---
 
 - An additional way of passing information with a request and a response
 - kind of like meta data, add-on details to your requests
@@ -21,7 +21,7 @@ No way to pass this header in the URL itself. Must be through AJAX
 in the hopscotch parameters: key: accept / value: application/json
 
 
-Prototypes
+---Prototypes---
 
 Something about __proto__: simple accessor property on Object. 
 prototype consisting of a getter and setter function.
