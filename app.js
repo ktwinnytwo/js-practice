@@ -11,6 +11,12 @@ We can also overwrite an already existing method like .push but not a good idea
 
 string is also a prototype (which is where indexOf and toUppercase come from)
 
+
+PROTOTYPE vs __proto__
+
+__proto__ is just the reference to the actual prototype object.
+In order to have access to the prototype object, arrays/strings/etc. must 
+reference __proto__ 
 */	 
 
 
